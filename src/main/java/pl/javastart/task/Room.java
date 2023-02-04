@@ -15,14 +15,12 @@ public class Room {
     }
 
     boolean lowerTemperature() {
-        if (airConditioned && roomTemperature > minTemperature) {
+        if (airConditioned && roomTemperature >= (minTemperature + 1)) {
             roomTemperature--;
-            if (roomTemperature >= minTemperature) {
-                return true;
-            } else {
-                roomTemperature = minTemperature;
-                return true;
-            }
+            return true;
+        } else if (airConditioned && roomTemperature > minTemperature) {
+            roomTemperature = minTemperature;
+            return true;
         }
         return false;
     }

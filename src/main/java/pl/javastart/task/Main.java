@@ -10,16 +10,16 @@ public class Main {
 
         Print print = new Print();
 
-        print.roomIformation(room1);
+        print.printRoomIformation(room1);
         System.out.println("Czy udało się obniżyć temperaturę w pomieszczeniu?: " + room1.lowerTemperature());
-        print.roomIformation(room1);
+        print.printRoomIformation(room1);
 
-        print.roomIformation(room2);
+        print.printRoomIformation(room2);
         System.out.println("Czy udało się obniżyć temperaturę w pomieszczeniu?: " + room2.lowerTemperature());
-        print.roomIformation(room2);
+        print.printRoomIformation(room2);
 
-        print.roomIformation(room3);
+        print.printRoomIformation(room3);
         System.out.println("Czy udało się obniżyć temperaturę w pomieszczeniu?: " + room3.lowerTemperature());
-        print.roomIformation(room3);
+        print.printRoomIformation(room3);
     }
 }
